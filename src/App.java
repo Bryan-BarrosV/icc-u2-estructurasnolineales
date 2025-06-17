@@ -18,5 +18,13 @@ public class App {
         System.out.println("preOrder:");
         arbol.preOrderTraversal();
 
+        System.out.println("imprimir (inOrder con salto de línea):");
+        arbol.imprimir();
+
+        int valorBuscado = 23;
+        System.out.println("¿Está el valor " + valorBuscado + "? " + (arbol.buscar(valorBuscado) ? "Sí" : "No"));
+
+        valorBuscado = 100;
+        System.out.println("¿Está el valor " + valorBuscado + "? " + (arbol.buscar(valorBuscado) ? "Sí" : "No"));
     }
 }
